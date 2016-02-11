@@ -1,0 +1,28 @@
+showReferralsLog: true
+loginMessageDelay: 40
+usePlayerNames: false
+allowCustomCodes: false
+autoUpdate: true
+checkIpAdress: true
+onlyAllowReferralsFirstLogin: true
+requiredPlayTime: 0
+maxCodes: 1
+useEconomy: false
+removeOldUsersCodes: 14
+Prizes:
+  onRedeem:
+    money: 20
+    items:
+      - DIAMOND:0:2
+    commands:
+  onEvery:
+    money: 100
+    items:
+      - DIAMOND:0:5
+    commands:
+  on5:
+    money: 500
+    items:
+      - DIAMOND:0:10
+    commands:
+      - referstats @p

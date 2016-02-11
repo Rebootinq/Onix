@@ -1,0 +1,49 @@
+name: OnixReferrals
+main: me.sothatsit.referrals.Referrals
+version: 1
+author: Rebootinq
+softdepend: [Essentials]
+commands:
+   redeemcode:
+      description: used to redeem a referral code
+      usage: /redeemcode <code>
+      permission: referrals.redeem
+   generatecode:
+      description: used to generate a referral code
+      usage: /generatecode
+      permission: referrals.generate
+   codes:
+      description: used to view your active referral codes
+      usage: /generatecode
+      permission: referrals.generate
+   referstats:
+      description: used to view your referral stats
+      usage: /referstats
+      permission: referrals.stats
+   refertop:
+      description: used to view the top referrers
+      usage: /refertop
+      permission: referrals.top
+   fixreferrers:
+      description: used to fix broken referral files
+      usage: /fixreferrers
+      permission: referrals.top
+permissions:
+    referrals.fix:
+        description: Allows you to use /fixreferrers
+        default: false
+    referrals.redeem:
+        description: Allows you to redeem someones code in-game
+        default: true
+    referrals.generate:
+        description: Allows you to generate a referral code
+        default: true
+    referrals.stats:
+        description: Allows you to view your referral stats
+        default: true
+    referrals.top:
+        description: Allows you to view the referral top list
+        default: true
+    referrals.nomax:
+        description: Allows you to create as many codes as you like
+        default: false
